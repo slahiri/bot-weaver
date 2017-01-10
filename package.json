@@ -24,11 +24,9 @@
   },
   "homepage": "https://github.com/slahiri/bot-weaver#readme",
   "dependencies": {
-    "fs-extra": "^1.0.0",
     "node-red": "^0.15.3",
     "node-red-contrib-admin": "0.0.4",
     "node-red-contrib-ui": "^1.2.19",
-    "node-red-storage-multiproject": "0.0.1-6",
     "when": "^3.7.7"
   }
 }
