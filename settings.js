@@ -18,10 +18,12 @@ var path = require("path");
 var when = require("when");
 var settings = module.exports = {
     uiPort: process.env.PORT || 1880,
+    storageModule: require('node-red-storage-multiproject'),
+    mongodbMultiproject: {port: 27017, host: 'localhost', bd:'nodered_mongo'},
     mqttReconnectTime: 15000,
     serialReconnectTime: 15000,
     debugMaxLength: 10000000,
-    nodesDir: path.join(__dirname,"nodes"),
+    nodesDir: path.join(__dirname, "nodes"),
     nodesExcludes:[ 
         '66-mongodb.js', 
         '75-exec.js',

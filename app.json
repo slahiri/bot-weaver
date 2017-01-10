@@ -16,5 +16,6 @@
       "value": ""
     }
   },
-  "addons": [ "mongolab" ]
+  "addons": [ "mongolab" ],
+  "image": "heroku/nodejs"
 }
