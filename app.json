@@ -1,9 +1,9 @@
 {
-  "name": "Node-Weaver",
+  "name": "Bot-Weaver",
   "description": "A visual wiring framework for Chatbots.",
   "keywords": [ "Node-RED", "AI", "Chatbot", "node.js", "node" ],
   "website": "#",
-  "repository": "https://github.com/slahiri/node-weaver.git",
+  "repository": "https://github.com/slahiri/bot-weaver.git",
   "logo": "http://nodered.org/node-red.png",
   "success_url": "/",
   "env": {
@@ -15,5 +15,6 @@
       "description": "The password to secure the editor.",
       "value": ""
     }
-  }
+  },
+  "addons": [ "mongolab" ]
 }
