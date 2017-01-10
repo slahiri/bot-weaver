@@ -1,0 +1,82 @@
+/**
+ * Copyright 2014 IBM Corp.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ **/
+
+var path = require("path");
+var when = require("when");
+var settings = module.exports = {
+    uiPort: process.env.PORT || 1880,
+    mqttReconnectTime: 15000,
+    serialReconnectTime: 15000,
+    debugMaxLength: 10000000,
+    nodesDir: path.join(__dirname,"nodes"),
+    nodesExcludes:[ 
+        '66-mongodb.js', 
+        '75-exec.js',
+        '35-arduino.js',
+        '36-rpi-gpio.js',
+        '25-serial.js',
+        '28-tail.js',
+        '50-file.js',
+        '31-tcpin.js',
+        '32-udp.js',
+        '23-watch.js',
+        '72-sentiment.js',
+        '32-feedparse.js',
+        '27-twitter.js',
+        '32-feedparse.js',
+        '61-email.js'],
+    paletteCategories: ['subflows', 
+        'input', 
+        'output', 
+        'function', 
+        'social', 
+        'mobile', 
+        'storage', 
+        'analysis', 
+        'advanced'],
+    autoInstallModules: false,
+    httpAdminRoot: '/admin',
+    nodesDir: './nodes',
+    httpStatic: path.join(__dirname,"public"),
+    functionGlobalContext: { },
+    flowFile: 'flows.json',
+    httpNodeCors: {
+        origin: "*",
+        methods: "GET,PUT,POST,DELETE"
+    }
+}
+
+if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
+    settings.adminAuth = {
+        type: "credentials",
+        users: function(username) {
+            if (process.env.NODE_RED_USERNAME == username) {
+                return when.resolve({username:username,permissions:"*"});
+            } else {
+                return when.resolve(null);
+            }
+        },
+        authenticate: function(username, password) {
+            if (process.env.NODE_RED_USERNAME == username &&
+                process.env.NODE_RED_PASSWORD == password) {
+                return when.resolve({username:username,permissions:"*"});
+            } else {
+                return when.resolve(null);
+            }
+        }
+    }
+}
+
