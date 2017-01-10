@@ -16,6 +16,6 @@
       "value": ""
     }
   },
-  "addons": [ "mongolab" ],
+  "addons": [ "mongolab", "trace:lite", "sumologic:test" ],
   "image": "heroku/nodejs"
 }
