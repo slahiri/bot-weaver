@@ -1,0 +1,32 @@
+{
+  "name": "bot-weaver",
+  "version": "0.0.1",
+  "description": "A visual wiring framework for Chatbots.",
+  "scripts": {
+    "start": "node node_modules/node-red/red.js --settings ./settings.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slahiri/bot-weaver.git"
+  },
+  "keywords": [
+    "Chatbot",
+    "Node-Red",
+    "AI",
+    "Node-RED",
+    "node.js",
+    "node"
+  ],
+  "author": "Siddhartha Lahiri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slahiri/bot-weaver/issues"
+  },
+  "homepage": "https://github.com/slahiri/bot-weaver#readme",
+  "dependencies": {
+    "node-red": "^0.15.3",
+    "node-red-contrib-admin": "0.0.4",
+    "node-red-contrib-ui": "^1.2.19",
+    "when": "^3.7.7"
+  }
+}
