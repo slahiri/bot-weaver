@@ -2,7 +2,7 @@
   "name": "Bot-Weaver",
   "description": "A visual wiring framework for Chatbots.",
   "keywords": [ "Node-RED", "AI", "Chatbot", "node.js", "node" ],
-  "website": "#",
+  "website": "http://nodered.org/",
   "repository": "https://github.com/slahiri/bot-weaver.git",
   "logo": "http://nodered.org/node-red.png",
   "success_url": "/",
