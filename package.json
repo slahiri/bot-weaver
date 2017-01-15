@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/slahiri/bot-weaver#readme",
   "dependencies": {
+    "nano": "^6.2.0",
     "node-red": "^0.15.3",
     "node-red-contrib-admin": "0.0.4",
     "node-red-contrib-advance-logger": "^1.0.2",

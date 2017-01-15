@@ -49,7 +49,7 @@ var settings = module.exports = {
         'advanced'],
     autoInstallModules: false,
     httpAdminRoot: '/admin',
-    nodesDir: './nodes',
+    nodesDir: path.join(__dirname,"nodes"),
     httpStatic: path.join(__dirname,"public"),
     functionGlobalContext: { },
     flowFile: 'flows.json',
@@ -58,7 +58,8 @@ var settings = module.exports = {
     httpNodeCors: {
         origin: "*",
         methods: "GET,PUT,POST,DELETE"
-    }
+    },
+    storageModule: require("./couchstorage")
 }
 
 
