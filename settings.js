@@ -53,11 +53,14 @@ var settings = module.exports = {
     httpStatic: path.join(__dirname,"public"),
     functionGlobalContext: { },
     flowFile: 'flows.json',
+    flowFilePretty: true,
+    userDir: './data',
     httpNodeCors: {
         origin: "*",
         methods: "GET,PUT,POST,DELETE"
     }
 }
+
 
 if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
     settings.adminAuth = {
