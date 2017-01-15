@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A visual wiring framework for Chatbots.",
   "scripts": {
-    "start": "node node_modules/node-red/red.js --settings ./settings.js"
+    "start": "node --max-old-space-size=384 node_modules/node-red/red.js --settings ./settings.js"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,9 @@
   "dependencies": {
     "node-red": "^0.15.3",
     "node-red-contrib-admin": "0.0.4",
+    "node-red-contrib-advance-logger": "^1.0.2",
     "node-red-contrib-ui": "^1.2.19",
+    "node-red-node-swagger": "^0.1.8",
     "when": "^3.7.7"
   }
 }

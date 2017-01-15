@@ -1,0 +1,61 @@
+[
+    {
+        "id": "915242a4.b9aaa",
+        "type": "tab",
+        "label": "Flow 1"
+    },
+    {
+        "id": "c5c2ce98.a34ca",
+        "type": "swagger-doc",
+        "z": "",
+        "summary": "Hello World API",
+        "description": "",
+        "tags": "",
+        "consumes": "",
+        "produces": "",
+        "parameters": [],
+        "responses": {},
+        "deprecated": false
+    },
+    {
+        "id": "1d482a73.cdd0d6",
+        "type": "http in",
+        "z": "915242a4.b9aaa",
+        "name": "Hello World",
+        "url": "/hello",
+        "method": "get",
+        "swaggerDoc": "c5c2ce98.a34ca",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "f944541e.5872d8"
+            ]
+        ]
+    },
+    {
+        "id": "f944541e.5872d8",
+        "type": "function",
+        "z": "915242a4.b9aaa",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 180,
+        "wires": [
+            [
+                "ee02b5d6.afa968"
+            ]
+        ]
+    },
+    {
+        "id": "ee02b5d6.afa968",
+        "type": "http response",
+        "z": "915242a4.b9aaa",
+        "name": "Hello World Response",
+        "x": 580,
+        "y": 260,
+        "wires": []
+    }
+]
