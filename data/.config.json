@@ -255,41 +255,6 @@
     }
    }
   },
-  "node-red-node-email": {
-   "name": "node-red-node-email",
-   "version": "0.1.15",
-   "local": false,
-   "nodes": {
-    "email": {
-     "name": "email",
-     "types": [
-      "e-mail",
-      "e-mail in"
-     ],
-     "enabled": true,
-     "local": false,
-     "module": "node-red-node-email",
-     "file": "/Users/slahir/bot-weaver/node_modules/node-red/node_modules/node-red-node-email/61-email.js"
-    }
-   }
-  },
-  "node-red-node-feedparser": {
-   "name": "node-red-node-feedparser",
-   "version": "0.1.7",
-   "local": false,
-   "nodes": {
-    "feedparse": {
-     "name": "feedparse",
-     "types": [
-      "feedparse"
-     ],
-     "enabled": true,
-     "local": false,
-     "module": "node-red-node-feedparser",
-     "file": "/Users/slahir/bot-weaver/node_modules/node-red/node_modules/node-red-node-feedparser/32-feedparse.js"
-    }
-   }
-  },
   "node-red-node-rbe": {
    "name": "node-red-node-rbe",
    "version": "0.1.6",
@@ -304,44 +269,6 @@
      "local": false,
      "module": "node-red-node-rbe",
      "file": "/Users/slahir/bot-weaver/node_modules/node-red/node_modules/node-red-node-rbe/rbe.js"
-    }
-   }
-  },
-  "node-red-node-serialport": {
-   "name": "node-red-node-serialport",
-   "version": "0.4.2",
-   "local": false,
-   "nodes": {
-    "serialport": {
-     "name": "serialport",
-     "types": [
-      "serial in",
-      "serial out",
-      "serial-port"
-     ],
-     "enabled": true,
-     "local": false,
-     "module": "node-red-node-serialport",
-     "file": "/Users/slahir/bot-weaver/node_modules/node-red/node_modules/node-red-node-serialport/25-serial.js"
-    }
-   }
-  },
-  "node-red-node-twitter": {
-   "name": "node-red-node-twitter",
-   "version": "0.1.9",
-   "local": false,
-   "nodes": {
-    "twitter": {
-     "name": "twitter",
-     "types": [
-      "twitter-credentials",
-      "twitter in",
-      "twitter out"
-     ],
-     "enabled": true,
-     "local": false,
-     "module": "node-red-node-twitter",
-     "file": "/Users/slahir/bot-weaver/node_modules/node-red/node_modules/node-red-node-twitter/27-twitter.js"
     }
    }
   },
