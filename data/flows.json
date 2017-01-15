@@ -54,8 +54,8 @@
         "type": "http response",
         "z": "915242a4.b9aaa",
         "name": "Hello World Response",
-        "x": 580,
-        "y": 260,
+        "x": 520,
+        "y": 280,
         "wires": []
     }
 ]

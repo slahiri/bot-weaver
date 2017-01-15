@@ -62,7 +62,19 @@ var settings = module.exports = {
     httpNodeCors: {
         origin: "*",
         methods: "GET,PUT,POST,DELETE"
-    }
+    },
+    editorTheme: {
+        page: {
+            title: "Bot-Weaver"
+        },
+        header: {
+            title: "Bot-Weaver"
+        },
+        deployButton: {
+            type:"simple",
+            label:"Save",
+        }
+    },
 }
 
 
